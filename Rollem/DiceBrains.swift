@@ -17,7 +17,7 @@ import Foundation
 
 
 struct SixSidedBrain {
-    let rollableNumbers = [1...6]
+    let rollableNumbers = [1, 2, 3, 4, 5, 6]
     
     func roll() -> Int {
         // generate a randomNumber from the rollableNumbers Array
