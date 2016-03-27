@@ -14,7 +14,10 @@ import UIKit
 class ViewController: UIViewController {
     
     //MARK: - ** Variables and Constants **
+    
     var numberOfSides: Int?
+    var outputOfRoll: Int?
+    
     
     
     //MARK: - ** Outlets **
@@ -26,10 +29,41 @@ class ViewController: UIViewController {
     
     //MARK: - ** Actions **
     @IBAction func rollTheDice(sender: AnyObject) {
-        
-        
-        
-        
+
+        switch numberOfSides {
+        case 4?:
+            let brain = FourSidedBrain()
+            let output = brain.roll()
+            outputOfRoll = output
+            print("Roll of the Dice = \(outputOfRoll!)")
+        case 6?:
+            let brain = SixSidedBrain()
+            let output = brain.roll()
+            outputOfRoll = output
+            print("Roll of the Dice = \(outputOfRoll!)")
+        case 8?:
+            let brain = EightSidedBrain()
+            let output = brain.roll()
+            outputOfRoll = output
+            print("Roll of the Dice = \(outputOfRoll!)")
+        case 10?:
+            let brain = TenSidedBrain()
+            let output = brain.roll()
+            outputOfRoll = output
+            print("Roll of the Dice = \(outputOfRoll!)")
+        case 12?:
+            let brain = TwelveSidedBrain()
+            let output = brain.roll()
+            outputOfRoll = output
+            print("Roll of the Dice = \(outputOfRoll!)")
+        case 20?:
+            let brain = TwentySidedBrain()
+            let output = brain.roll()
+            outputOfRoll = output
+            print("Roll of the Dice = \(outputOfRoll!)")
+        default:
+            print("Some Shit went really bad for You to end up Here!!!")
+        }
     }
     
     @IBAction func diceSelectionAction(sender: UIButton) {
@@ -70,6 +104,28 @@ class ViewController: UIViewController {
         numberOfSides = nil
         titleLabel.text = "Choose Your Weapon"
     }
+    
+    
 
+    
+    
+    
+    
+    
+    
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
 

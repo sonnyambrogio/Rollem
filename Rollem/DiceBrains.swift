@@ -14,6 +14,8 @@
  */
 import Foundation
 
+
+
 struct SixSidedBrain {
     let rollableNumbers = [1...6]
     
@@ -79,7 +81,6 @@ struct TwentySidedBrain  {
         return randomIndex + 1
     }
 }
-
 
 
 
