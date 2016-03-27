@@ -27,11 +27,14 @@ class ViewController: UIViewController {
     //MARK: - ** Actions **
     @IBAction func rollTheDice(sender: AnyObject) {
         
+        
+        
+        
     }
     
     @IBAction func diceSelectionAction(sender: UIButton) {
         numberOfSides = Int(sender.currentTitle!)
-        print(numberOfSides!)
+        print("Number of Sides Chosen is '\(numberOfSides!)'")
         resetButtonOutlet.hidden = false
         buttonStack.hidden = true
         rollButton.hidden = false
